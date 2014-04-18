@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<!--header-->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+	<meta name='keywords' content='javascript box 页面弹出效果' />
+	<meta name='description' content='LsBox_v1.0基于javascript的弹出窗等ui插件'/>
+	<meta name='copyright' content="LsBox_v1.0" />
+	<meta name='author' content='乱事重生' />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+   	<title>LsBox_v1.0一款基于javascript的弹出窗插件</title>
+</head>
+<body>
+<a id="toTop" href="javascript:void(0);" style="display:none;"><img src="images/top.png" width="49px" height="67px" /></a>
+<div id="header">
+    <h1>LsBox Demo</h1>
+</div>
+<div id="content">
+    <div class="section">
+        <span onclick="LsIframe('Http://about.burtyu.com','600','400','乱事重生的个人资料');">查看开发者资料</span>
+        <span onclick="window.location.href = 'http://burtyu.com';">访问开发者博客</span>
+        <span onclick="window.location.href = 'http://weibo.com/525456886';">访问开发者微博</span>
+        <span onclick="window.location.href = 'http://burtyu.com/posts/view/id/23.html';">建议与意见</span>
+        <div class="clear"></div>
+        <div class="information">
+            <h2>LsBox介绍与描述</h2>
+            <p>开发目的：熟悉javascript DOM的相关代码。</p>
+            <p>适用平台：ie7-ie10、firefox、chrome、opera（建议使用于html5协议的项目）</p>
+            <p>载入方法：将lsBox.js(已压缩，大小为3.62k)引入；将base.css里的/*ui样式*/.../*ui样式*/之间的样式复制到你的项目中即可。(返回顶部例外)</p>
+            <p>下载地址：<a style="color:#3399ff;" target="_blank" href="http://pan.baidu.com/share/link?shareid=122637&uk=3959914616">http://pan.baidu.com/share/link?shareid=122637&uk=3959914616</a></p>
+        </div>
+    </div>
+    <div class="section">
+    <a class="at" href="javascript:LsSuccess();">添加返回顶部功能</a>
+        <p>
+        载入方法说明:
+        <pre>
+        将下面代码加入到页面任意位置
+        <img src="upload/demo.png"/>
+        </pre></p>
+    </div>
+    <div class="section">
+    <a class="at" href="javascript:LsSuccess();">点击弹出成功提示</a>
+        <p>
+        相关函数使用说明:
+        <pre>
+            LsSuccess() //弹出操作成功提示
+        </pre></p>
+    </div>
+    <div class="section">
+        <a class="at" href="javascript:LsError();">点击弹出失败提示</a>
+        <p>
+        相关函数使用说明:
+        <pre>
+            LsError()   //弹出操作错误提示
+        </pre></p>
+        
+    </div>
+    <div class="section">
+        <a class="at" href="javascript:LsMessage('1','欢迎使用LsBox_V1.0版');">消息提示</a>
+        <p>
+        相关函数使用说明:
+        <pre>
+            LsMessage(type,message) //type 0，为错误提示样式，1为成功提示样式；message 要提示的信息。
+        </pre></p>
+        
+    </div>
+    <div class="section">
+        <a class="at" href="javascript:LsImage('upload/bb.jpg');">点击弹出图片</a>
+        <p>
+        相关函数使用说明:
+        <pre>
+            LsImage(imgName) //imgName 图片地址
+        </pre></p>
+    </div>
+    <div class="section">
+        <a class="at" href="javascript:LsAjax('ajax.html');">点击弹出表单(ajax加载页面)</a>
+        <p>
+        相关函数使用说明:
+        <pre>
+            LsAjax('page','title')  //page 需要ajax加载的页面；title 设置弹出层标题,可为空；
+        </pre></p>
+    </div>
+    <div class="section">
+        <a class="at" href="javascript:LsIframe('Http://baidu.com','1000','400');">点击弹出iframe</a>
+        <p>
+        相关函数使用说明:
+        <pre>
+            LsIframe('url','width','height','iframeTit')  //url 需要引入iframe的页面；width iframe宽度，可为空； height iframe高度 可为空；iframeTit 标题
+        </pre></p>
+    </div>
+</div>
+<div id="footer">
+    <p>制作者：乱事重生</p>
+    <script type="text/javascript" src="js/lsBox.js"></script>
+    <script type="text/javascript">toTop.goto("toTop");</script>
+</div>
+</body>
+</html>

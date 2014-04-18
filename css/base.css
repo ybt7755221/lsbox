@@ -1,0 +1,40 @@
+/*全局样式*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#E8E8E8; line-height:20px; letter-spacing: 1px; color:#333;font-size:12px; font-family:"SimSun","微软雅黑","宋体","Arial Narrow";}
+ul,ol,nav{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+a{text-decoration:none;color:#000;}
+a:hover{color:#E77214;}
+/*全局样式*/
+/*index*/
+#header{width:100%; height:40px; overflow: hidden; text-align:center;}
+#content{width:1100px; height:100%; overflow:hidden; margin:0 auto;}
+#content .section{ width:1060px; overflow:hidden; padding:10px 20px 20px; margin:0 auto 10px; background:#fff;}
+#content .section .at{background:#3399ff; width:200px; height: 30px; line-height:30px; text-align:center; font-size:14px; color:#fff; display:block;}
+#content .section span{background:#787878; cursor:pointer; margin: 0 17px 10px; width:230px; height: 30px; line-height:30px; text-align:center; font-size:16px; color:#fff; display:block; float:left;}
+#content .section .information{width:1000px; overflow:hidden; padding:10px; border: 1px solid #b8b9ba; margin:0 auto; }
+#content .section .information p {width:100%; height:20px; line-height:20px; margin-left:58px;}
+#footer{width:100%; height:40px; overflow: hidden; text-align:center;}
+.clear{clear:both;}
+/*index*/
+
+/*ui样式*/
+#ls_mask{width:100%; height:100%; overflow:hidden; z-index:99; position:fixed; background:#000; left:0; top:0; filter:alpha(opacity=60); -moz-opacity:0.6; opacity: 0.6;}
+#ls_maskDiv{width:100%; height:100%; overflow:hidden; z-index:99; position:fixed; left:0; top:0;}
+#ls_maskDiv #ls_information{position:absolute; top:50%; left:50%; z-index:100; padding-left:60px; font-size:18px; font-weight:bolder; border:5px solid #7c7c7c; padding-right: 10px; padding-top:20px; height:40px; overflow:hidden; margin-top:-30px;}
+#ls_maskDiv .ls_imgTit{width:100%; height:50px;  text-align:center;}
+#ls_maskDiv .ls_imgTit h1{padding-top:15px; color:white;}
+#ls_maskDiv .ls_imgTit .ls_close{position: fixed; width:50px; height:50px; right:0; top:0; background: url(../images/close.png) left top no-repeat;}
+#ls_maskDiv .ls_prev{width:130px; height:300px; overflow:hidden; margin-top: -150px; background:url(../images/left.png) left top no-repeat; position:absolute; left:0; top:50%;}
+#ls_maskDiv .ls_next{width:130px; height:300px; overflow:hidden; margin-top: -150px; background:url(../images/right.png) right top no-repeat; position:absolute; right:0; top:50%;}
+#ls_maskDiv #ls_imageDiv{position:absolute; left:50%; top:50%; overflow:hidden;}
+#ls_maskDiv .waiting{padding:10px; margin-left:-16px; margin-top:-16px; background:url('../images/waiting.gif') center center no-repeat; width:32px; height:32px;}
+#ls_maskDiv #bgDiv .ls_closeImg{position:absolute; background:url(../images/fancy_close.png) no-repeat; right:-2px; top:-2px; z-index:100; width:30px; height:30px; overflow:hidden;}
+#ls_maskDiv #ls_form{position:absolute; left:50%; top:50%; overflow:hidden; background:white; border:5px solid #6b6d6b;}
+#ls_maskDiv #ls_form .ls_formTit{height:20px; line-height:20px; padding-left: 10px; overflow:hidden; background:#393939; color:white; font-size:12px; font-weight:bold;}
+#ls_maskDiv #ls_form .ls_formTit .ls_closeForm{width:20px; height: 20px; overflow:hidden; position:absolute; right:5px; background:url('../images/close.png') center no-repeat;}
+#ls_maskDiv #ls_form #ls_formDiv{min-width:120px; height:100%; overflow:hidden; padding: 5px 10px 10px;}
+#ls_maskDiv .LsSuc{color:green; background:url(../images/html_clew_box.gif) left top;}
+#ls_maskDiv .LsErr{color:red; background:url(../images/html_clew_box.gif) left bottom;}
+#toTop{width:15px;background:#595959;position:fixed;bottom:25px;right:70px; _position: absolute; _bottom:auto; _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-75-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));};
+/*ui样式*/
